@@ -1,0 +1,30 @@
+/* pages/items/items.wxss */
+.item {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.items-header {
+  display: flex;
+  font-size: 28rpx;
+  padding: 10rpx 0;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+}
+.title, .type, .score, .remark {
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.title {
+  font-weight: bold;
+}
+.score, .type {
+  text-align: center;
+}

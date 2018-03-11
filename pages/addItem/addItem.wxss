@@ -1,0 +1,20 @@
+/* pages/addItem/addItem.wxss */
+.section {
+  margin: 50rpx 20rpx;
+  align-content: stretch;
+  border-bottom: 1px solid #ccc;
+}
+.section__title {
+  font-size: 14px;
+  flex: 0 0 50rpx;
+}
+input {
+  height: 100rpx;
+}
+textarea {
+  padding: 30rpx 10rpx;
+}
+.btn-area {
+  display: flex;
+  justify-content: space-around;
+}

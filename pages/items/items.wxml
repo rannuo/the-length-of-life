@@ -1,0 +1,14 @@
+<!--pages/items/items.wxml-->
+<button bindtap="onAddClick">+</button>
+<view class='items-header'>
+  <text>标题</text>
+  <text>类型</text>
+  <text>积分</text>
+  <text>备注</text>
+</view>
+<view wx:for="{{items}}" wx:key="{{item.id}}" data-itemid="{{item.id}}" bindlongpress="bindItemLongPress" class="item">
+  <text class="title">{{item.title}}</text>
+  <text class="type">{{item.type}}</text>
+  <text class="score">{{item.score}}分</text>
+  <text class="remark">{{item.remark}}</text>
+</view>

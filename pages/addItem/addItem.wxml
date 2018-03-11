@@ -1,0 +1,27 @@
+<!--pages/addItem/addItem.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="section__title">标题</view>
+    <input name="title" data-name="title" value="{{title}}" bindinput="onFormFieldChange" placeholder="请输入标题" />
+  </view>
+  <view class="section">
+    <view class="section__title">选择类型</view>
+    <picker  mode="selector" name="type" data-name="type" bindchange="onFormFieldChange" value="{{type}}" range="{{types}}">
+      <view class="picker">
+        {{types[type]}}
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <view class="section__title">积分</view>
+    <input type="number" name="score" data-name="score" bindinput="onFormFieldChange" maxlength="10" value="{{score}}" placeholder="请输入积分" />
+  </view>
+  <view class="section">
+    <view class="section__title">备注</view>
+    <textarea name="remark" bindinput="onFormFieldChange" data-name="remark" value="{{remark}}" auto-height placeholder="请输入备注" />
+  </view>
+  <view class="btn-area">
+    <button formType="reset">Reset</button>
+    <button formType="submit" type="primary">Submit</button>
+  </view>
+</form>
