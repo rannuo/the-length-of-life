@@ -8,3 +8,6 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 }
+page {
+  background: url('https://static.smartisanos.cn/cloud/note/img/cloud_note_bg_d2def91e10.jpg')
+}
